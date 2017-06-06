@@ -65,3 +65,9 @@ body {
     filter: drop-shadow(8px 8px 200px blue) drop-shadow(-8px -8px 20px white);
     transition-duration: 0s;
 }
+iframe{
+    
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
