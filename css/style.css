@@ -1,0 +1,67 @@
+.content {
+    display: flex;
+    flex: 1;
+}
+.center-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+#center-image {
+    display: block;
+    margin: auto;
+    
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 5px red) drop-shadow(-1px -1px 5px red);
+    transition-property: filter;
+    transition-duration: .4s;
+}
+#center-image:hover {
+    filter: drop-shadow(2px 2px 10px red) drop-shadow(-2px -2px 10px red);
+    transition-duration: .4s;
+}
+#center-image:active {
+    filter: drop-shadow(2px 2px 20px blue) drop-shadow(-2px -2px 20px blue);
+    transition-duration: 0s;
+}
+body {
+    background-color: black;
+    font-family: sans-serif;
+    position: relative;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 12px;
+}
+.links a{
+    color:#fff;
+    text-decoration:none;
+
+    margin-left: 5px;
+    margin-right: 5px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#center-image.manavoid {
+
+    filter: drop-shadow(1px 1px 5px white) drop-shadow(-1px -1px 5px white);
+    transition-property: filter;
+    transition-duration: .4s;
+}
+#center-image.manavoid:hover {
+    filter: drop-shadow(2px 2px 10px blue) drop-shadow(-2px -2px 10px white);
+    transition-duration: .4s;
+}
+#center-image.manavoid:active {
+    filter: drop-shadow(8px 8px 200px blue) drop-shadow(-8px -8px 20px white);
+    transition-duration: 0s;
+}
